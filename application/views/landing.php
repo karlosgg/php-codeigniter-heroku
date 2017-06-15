@@ -10,7 +10,7 @@
 	<?php
 		if(isset($userlist)){
 			foreach ($userlist as $u) {
-				echo $u->username . "<br>";
+				echo $u->User . "<br>";
 			}
 		}
 	?>
