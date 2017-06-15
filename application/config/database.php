@@ -53,8 +53,8 @@ $active_record = TRUE;
 $url = "mysql://test:test@127.0.0.1/test?reconnect=true";
 
 // Else, if running on Heroku
-if(isset($_ENV['CLEARDB_DATABASE_URL'])){
-	$url = $_ENV['CLEARDB_DATABASE_URL'];
+if(isset($_ENV['DATABASE_URL'])){
+	$url = $_ENV['DATABASE_URL'];
 }
 
 // Parse connection url
