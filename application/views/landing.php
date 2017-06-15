@@ -5,7 +5,7 @@
 </head>
 
 <body>
-	<div>Welcome! Hello World.</div>
+	<div>list.</div>
 	<div>
 	<?php
 		if(isset($userlist)){
