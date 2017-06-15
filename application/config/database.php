@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 
 // If running locally
-$url = "mysql://test:test@127.0.0.1/test?reconnect=true";
+$url = "postgres://user:password@127.0.0.1:5432/db_name";
 
 // Else, if running on Heroku
 if(isset($_ENV['DATABASE_URL'])){
@@ -71,7 +71,7 @@ $db['default']['hostname'] = constant("DB_HOST");
 $db['default']['username'] = constant("DB_USER");
 $db['default']['password'] = constant("DB_PASS");
 $db['default']['database'] = constant("DB_DATABASE");
-$db['default']['dbdriver'] = 'postgre';
+$db['default']['dbdriver'] = 'postgre';//posgre driver
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;

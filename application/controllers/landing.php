@@ -9,8 +9,8 @@ class Landing extends CI_Controller {
 
 	public function test()
 	{
-		$this->db->select('username');
-   		$this->db->from('users');
+		$this->db->select('User');
+   		$this->db->from('USERS');
    		$query = $this->db->get();
 
    		$data['userlist'] = $query->result();
