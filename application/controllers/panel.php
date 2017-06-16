@@ -13,5 +13,9 @@ class Panel extends CI_Controller {
 		//	$this->load->view('login');
 		//}
 	}
+	public function users()
+	{
+		$this->load->view('users');
+	}
 }
 
